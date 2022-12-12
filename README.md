@@ -1,56 +1,16 @@
-# 📖 VET CLINIC DATABASE <a name=""></a>
-- Use relational database to create the initial data structure for a vet clinic. Create a table to store animals' information, insert some data into it, and query it..
-## 🛠 Built With <a name="built-with"></a>
+# VET CLINIC DATABASE
 
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href=""></a></li>
-  </ul>
-</details>
+> Vet Clinic is a relational database management web based application that tracks information about animals, their clinic visits and the details of the clinics employees who attended to them.
 
-### Key Features <a name="Conneting to api server"></a>
+## Getting Started
 
-> 
+This repository includes files with plain SQL that can be used to recreate the vet clinic database:
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- Use [schema.sql](./schema.sql) to create all tables.
+- Use [data.sql](./data.sql) to populate tables with sample data.
+- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- []()
-
-## 🚶‍♂️🚶‍♂️Walk through video clip
-- []()
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 💻 Getting Started <a name="getting-started"></a>
-
-> To get a local copy up and running, follow these steps.
-
-### Prerequisites
-
-Vscode. must have git installed.
-In order to run this project you need:
-### Setup
-Clone this [Repository]() to your desired folder:
-
-### To enter Directory
-> cd react-capstone
-### To Install Packages
-`npm install`
-### To run project on local server
-`npm start`
-### To run project tests
-`npm test`
-### To open project with vs code 
-`code .`
- ### Deployment
-  Push changes to a branch. Wait for the build to pass on our CI server. Tell Hubot to deploy it. Verify that the changes work and fix any problems that come up. Merge the branch into master.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## Author <a name=""></a>
+## Authors
 
 👤 **Kasaija Kenneth**
 
@@ -62,59 +22,20 @@ Clone this [Repository]() to your desired folder:
 
 > - Email: [G-mail](kasaijak@gmail.com)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
-
-- [x] **[]**
-- [x] **[]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🤝 Contributing <a name="contributing"></a>
+## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page]().
+Feel free to check the [issues page](https://github.com/Kasaija-Kenneth/vet-clinic/issues/).
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## Show your support
 
-## ⭐️ Show your support <a name="support"></a>
+Give a ⭐️ if you like this project!
 
-> Write a message to encourage readers to support your project
+## Acknowledgments
 
-If you like this project, please don't forget to give it a ⭐️
+- High five to [Microverse](http://microverse.org) who offered project template to guide me through.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## 📝 License
 
-<!-- ACKNOWLEDGEMENTS -->
-
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
->
-
-I would like to thank...
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
-
-## ❓ FAQ <a name="faq"></a>
-
-> : it  wait for elememts.
-
-- **[How dose asycn works.]**
-  - it  waits for elememts
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LICENSE -->
-
-## 📝 License <a name="license"></a>
-
-This project is [GPL](./LICENSE) licensed.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+This project is [MIT](./LICENSE) licensed.
