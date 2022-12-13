@@ -10,3 +10,6 @@ CREATE TABLE animals (
     weight_kg float,
     PRIMARY KEY (id)
 );
+
+ALTER TABLE animals 
+ADD COLUMN species VARCHAR(255);
