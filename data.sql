@@ -12,7 +12,7 @@ VALUES ('Pikachu', '2021-01-07', 1, false, 15.04);
 INSERT INTO animals (id, name, date_of_birth, escape_attempts, neutered, weight_kg)
 VALUES ('Devimon', '2017-05-12', 5, true, 15.04);
 
-/*Project two*/
+/*PROJECT TWO*/
 
 INSERT INTO animals (id, name, date_of_birth, escape_attempts, neutered, weight_kg, species)
 VALUES ('Charmander', '2020-02-08', 0, false, -11, 'Animal'),
@@ -23,7 +23,7 @@ VALUES ('Charmander', '2020-02-08', 0, false, -11, 'Animal'),
 ('Blossom', '1998-06-13', 3, true, 17, 'Animal'),
 ('Ditto', '2022-05-14', 4, true, 22, 'Animal');
 
-/*Project three*/
+/*PROJECT THREE*/
 /*Owners table*/
 
 INSERT INTO owners(full_name,age)
