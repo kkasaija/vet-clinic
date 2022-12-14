@@ -2,12 +2,12 @@
 
 CREATE DATABASE vet_clinic;
 CREATE TABLE animals (
-    id int,
-    name varchar(100),
-    date_of_birth date,
-    escape_attempts int,
-    neutered boolean,
-    weight_kg float,
+    id BIGSERIAL NOT NULL,
+    name varchar(100) NOT NULL,
+    date_of_birth date NOT NULL,
+    escape_attempts int NOT NULL,
+    neutered boolean NOT NULL,
+    weight_kg float NOT NULL,
     PRIMARY KEY (id)
 );
 
