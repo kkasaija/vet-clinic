@@ -383,3 +383,13 @@ INSERT INTO visits(animals_id, vets_id, date_of_visit) VALUES (
   ),
   '2021-01-11' 
 );
+
+/* Insert data into the specialties table */
+
+/* William Tatcher is specialized in Pokemon */
+INSERT INTO specializations (species_id, vets_id) VALUES (1, 1);
+/* Stephanie Mendez is specialized in Digimon and Pokemon */
+INSERT INTO specializations (species_id, vets_id) VALUES (2, 3);
+INSERT INTO specializations (species_id, vets_id) VALUES (1, 3);
+/*Jack Harkness is specialized in Digimon */
+INSERT INTO specializations (species_id, vets_id) VALUES (2, 4);
