@@ -66,6 +66,9 @@ CREATE TABLE visits(
 );
 
 /*PERFORMANCE AUDIT*/
+-- Add an email column to your owners table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
 
 CREATE INDEX all_animals_id ON visits(animals_id);
+CREATE INDEX all_vets_id ON visits(vets_id);
 
