@@ -42,6 +42,6 @@ CREATE TABLE medical_history_treatment(
   CONSTRAINT fk_treatments FOREIGN KEY(treatment_id) REFERENCES treatments(id);
 );
 
-ALTER TABLE medical_histories ADD CONSTRAINT fk_medical_histories FOREIGN KEY (patient_id) REFERENCES patient(id);
+ALTER TABLE medical_histories ADD CONSTRAINT fk_medical_histories FOREIGN KEY (patient_id) REFERENCES patients(id);
 ALTER TABLE invoice_items ADD CONSTRAINT fk_invoice_item_id FOREIGN KEY (invoice_id) REFERENCES invoices(id);
 ALTER TABLE invoice_items ADD CONSTRAINT fk_treatment_id FOREIGN KEY (treatment_id) REFERENCES treatments(id);
