@@ -31,6 +31,7 @@ CREATE TABLE invoice_items(
   id serial primary key,
   unit_price decimal,
   quantity int,
+  total_price decimal,
   invoice_id int,
   treatment_id int
 );
@@ -45,3 +46,4 @@ CREATE TABLE medical_history_treatment(
 ALTER TABLE medical_histories ADD CONSTRAINT fk_medical_histories FOREIGN KEY (patient_id) REFERENCES patients(id);
 ALTER TABLE invoice_items ADD CONSTRAINT fk_invoice_item_id FOREIGN KEY (invoice_id) REFERENCES invoices(id);
 ALTER TABLE invoice_items ADD CONSTRAINT fk_treatment_id FOREIGN KEY (treatment_id) REFERENCES treatments(id);
+ALTER TABLE invoices ADD CONSTRAINT fk_invoices FOREIGN KEY (medical_history_id) REFERENCES medical_histories(id);
