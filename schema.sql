@@ -64,3 +64,8 @@ CREATE TABLE visits(
   CONSTRAINT fk_animals FOREIGN KEY(animals_id) REFERENCES animals(id) ON UPDATE CASCADE ON DELETE CASCADE,
   CONSTRAINT fk_vets FOREIGN KEY(vets_id) REFERENCES vets(id) ON UPDATE CASCADE ON DELETE CASCADE
 );
+
+/*PERFORMANCE AUDIT*/
+
+CREATE INDEX all_animals_id ON visits(animals_id);
+
