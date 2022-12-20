@@ -35,27 +35,13 @@ CREATE TABLE invoice_items(
   treatment_id int
 );
 
--- ALTER TABLE animals DROP COLUMN species;
--- ALTER TABLE animals ADD COLUMN species_id INT;
--- ALTER TABLE animals ADD CONSTRAINT fk_animals_species FOREIGN KEY (species_id) REFERENCES species(id);
--- ALTER TABLE animals ADD COLUMN owners_id INT;
--- ALTER TABLE animals ADD CONSTRAINT fk_animals_owners FOREIGN KEY (owners_id) REFERENCES owners(id);
+CREATE TABLE medical_history_treatment(
+  medical_history_id int,
+  treatment_id int,
+  CONSTRAINT fk_medical_history FOREIGN KEY(medical_history_id) REFERENCES medical_histories(id);
+  CONSTRAINT fk_treatments FOREIGN KEY(treatment_id) REFERENCES treatments(id);
+);
 
--- redo this 
--- CREATE TABLE specializations( 
---   species_id INT,
---   vets_id INT,
---   CONSTRAINT fk_species FOREIGN KEY(species_id) REFERENCES species(id) ON UPDATE CASCADE ON DELETE CASCADE,
---   CONSTRAINT fk_vets FOREIGN KEY(vets_id) REFERENCES vets(id) ON UPDATE CASCADE ON DELETE CASCADE,
---   CONSTRAINT fk_species_vets PRIMARY KEY (species_id, vets_id)
--- );
-
--- CREATE TABLE visits(
---   id SERIAL PRIMARY KEY,
---   animals_id INT,
---   vets_id INT,
---   date_of_visit date NOT NULL,
---   CONSTRAINT fk_animals FOREIGN KEY(animals_id) REFERENCES animals(id) ON UPDATE CASCADE ON DELETE CASCADE,
---   CONSTRAINT fk_vets FOREIGN KEY(vets_id) REFERENCES vets(id) ON UPDATE CASCADE ON DELETE CASCADE
--- );
-
+ALTER TABLE medical_histories ADD CONSTRAINT fk_medical_histories FOREIGN KEY (patient_id) REFERENCES patient(id);
+ALTER TABLE invoice_items ADD CONSTRAINT fk_invoice_item_id FOREIGN KEY (invoice_id) REFERENCES invoices(id);
+ALTER TABLE invoice_items ADD CONSTRAINT fk_treatment_id FOREIGN KEY (treatment_id) REFERENCES treatments(id);
