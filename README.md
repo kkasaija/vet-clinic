@@ -163,11 +163,10 @@ Example:
 
 > - Email: [G-mail](kasaijak@gmail.com)
 
-👤 **Author2**
+👤 **Shuhad Loofer**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Shuhad786](https://github.com/Shuhad786)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/shuhad-loofer/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -177,9 +176,7 @@ Example:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[Add the data base to an app]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
